@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="font-sans bg-[#FAF5EF] min-h-screen">
-    <header class="bg-[#48583B] p-4 md:px-8 flex items-center justify-between">
+    <header class="bg-[#48583B] p-4 md:px-8 flex items-center justify-between" data-aos="fade-down">
         <div class="flex items-center gap-8">
             <img src="./images/RetasifyLogo.svg" alt="Retasify Logo" class="h-12 w-auto bg-white p-2 px-8 rounded-full ml-20">
             
@@ -52,7 +53,7 @@
     <!-- Landing Page -->
     <section class="min-h-screen px-5 md:px-10 py-10 md:py-16">
         <div class="max-w-screen mx-auto flex items-center justify-between flex-col lg:flex-row gap-10 md:gap-20 ml-10 mt-20">
-            <div class="flex-1 max-w-2xl">
+            <div class="flex-1 max-w-2xl" data-aos="fade-right" data-aos-duration="1000">
                 <h1 class="text-3xl md:text-6xl font-light text-gray-800 mb-8 leading-relaxed font-tan-aegean whitespace-nowrap">
                     Wear with Style,<br>
                     Share with Purpose.
@@ -60,12 +61,12 @@
                 <p class="text-gray-600 mb-12 text-lg leading-relaxed max-w-md">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <button class="bg-[#F4B840] text-black px-8 py-3 rounded-full text-lg font-sans hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg">
+                <button class="bg-[#F4B840] text-black px-8 py-3 rounded-full text-lg font-sans hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg" data-aos="zoom-in" data-aos-delay="300">
                     Get Started
                 </button>
             </div>
             
-            <div class="flex-1 flex justify-center">
+            <div class="flex-1 flex justify-center" data-aos="fade-left" data-aos-duration="1000">
                 <img src="./images/FilipinianaImage.png" alt="" class="w-[350px] md:w-[450px] lg:w-[550px] h-[350px] md:h-[450px] lg:h-[550px] object-cover rounded-tl-[200px] rounded-4xl shadow-lg">
             </div>
         </div>
@@ -74,10 +75,10 @@
     <!-- Categories Section -->
     <section class="px-8 md:px-16 py-20">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center justify-self-start">Browse by Categories</h2>
+            <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center justify-self-start" data-aos="fade-up">Browse by Categories</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-min">
-                <div class="md:col-span-7 md:col-start-1 bg-[#E8E5DC] rounded-3xl p-10 flex flex-col justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden">
+                <div class="md:col-span-7 md:col-start-1 bg-[#E8E5DC] rounded-3xl p-10 flex flex-col justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-full">
                         <h3 class="text-4xl font-semibold text-gray-800 mb-6">Formal Wear</h3>
                         <p class="text-gray-600 text-xl leading-relaxed mb-8">
@@ -89,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="md:col-span-5 bg-[#7A8B6B] rounded-3xl p-10 flex items-start justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden">
+                <div class="md:col-span-5 bg-[#7A8B6B] rounded-3xl p-10 flex items-start justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex-1 max-w-sm">
                         <h3 class="text-4xl font-semibold text-white mb-6">Cultural Wear</h3>
                         <p class="text-white text-xl leading-relaxed opacity-90">
@@ -101,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="md:col-span-5 md:col-start-1 bg-[#7A8B6B] rounded-3xl p-10 flex items-start justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden">
+                <div class="md:col-span-5 md:col-start-1 bg-[#7A8B6B] rounded-3xl p-10 flex items-start justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex-1 max-w-lg">
                         <h3 class="text-4xl font-semibold text-white mb-6">Specialty Wear</h3>
                         <p class="text-white text-xl leading-relaxed opacity-90">
@@ -113,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="md:col-span-7 md:col-start-6 bg-[#E8E5DC] rounded-3xl p-10 flex flex-col justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden">
+                <div class="md:col-span-7 md:col-start-6 bg-[#E8E5DC] rounded-3xl p-10 flex flex-col justify-between hover:shadow-xl transition-all duration-300 h-96 relative overflow-hidden" data-aos="fade-up" data-aos-delay="400">
                     <div class="w-full">
                         <h3 class="text-4xl font-semibold text-gray-800 mb-6">Wedding Wear</h3>
                         <p class="text-gray-600 text-xl leading-relaxed mb-8">
@@ -131,11 +132,11 @@
     <!-- Featured Items -->
     <section class="px-8 md:px-16 py-20">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center">Featured Items</h2>
+            <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center" data-aos="fade-up">Featured Items</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Featured Item Card 1 -->
-                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3">
+                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative">
                         <img src="./images/Placeholder_img.png" alt="Black Suit" class="w-full h-64 object-cover bg-gray-300 rounded-2xl">
                         <div class="absolute top-3 left-3 bg-[#F4B840] rounded-full p-2">
@@ -170,7 +171,7 @@
                 </div>
 
                 <!-- Featured Item Card 2 -->
-                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3">
+                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative">
                         <img src="./images/Placeholder_img.png" alt="Black Suit" class="w-full h-64 object-cover bg-gray-300 rounded-2xl">
                         <div class="absolute top-3 left-3 bg-white rounded-full p-2 shadow-md">
@@ -205,7 +206,7 @@
                 </div>
 
                 <!-- Featured Item Card 3 -->
-                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3">
+                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative">
                         <img src="./images/Placeholder_img.png" alt="Black Suit" class="w-full h-64 object-cover bg-gray-300 rounded-2xl">
                         <div class="absolute top-3 left-3 bg-white rounded-full p-2 shadow-md">
@@ -240,7 +241,7 @@
                 </div>
 
                 <!-- Featured Item Card 4 -->
-                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3">
+                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="relative">
                         <img src="./images/Placeholder_img.png" alt="Black Suit" class="w-full h-64 object-cover bg-gray-300 rounded-2xl">
                         <div class="absolute top-3 left-3 bg-white rounded-full p-2 shadow-md">
@@ -275,7 +276,7 @@
                 </div>
 
                 <!-- Featured Item Card 5 -->
-                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3">
+                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3" data-aos="fade-up" data-aos-delay="500">
                     <div class="relative">
                         <img src="./images/Placeholder_img.png" alt="Black Suit" class="w-full h-64 object-cover bg-gray-300 rounded-2xl">
                         <div class="absolute top-3 left-3 bg-white rounded-full p-2 shadow-md">
@@ -310,7 +311,7 @@
                 </div>
 
                 <!-- Featured Item Card 6 -->
-                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3">
+                <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3" data-aos="fade-up" data-aos-delay="600">
                     <div class="relative">
                         <img src="./images/Placeholder_img.png" alt="Black Suit" class="w-full h-64 object-cover bg-gray-300 rounded-2xl">
                         <div class="absolute top-3 left-3 bg-white rounded-full p-2 shadow-md">
@@ -350,12 +351,12 @@
     <!-- How Retasify Works -->
     <section class="px-8 md:px-16 py-20">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center">
+            <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center" data-aos="fade-up">
                 How <span class="text-[#F4B840]">Retasify</span> Works
             </h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="100">
                     <div class="mb-6 flex justify-center">
                         <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Device.png" alt="Browse Icon" class="w-full h-full object-contain">
@@ -373,7 +374,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="200">
                     <div class="mb-6 flex justify-center">
                         <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Location.png" alt="Location Icon" class="w-full h-full object-contain">
@@ -391,7 +392,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="300">
                     <div class="mb-6 flex justify-center">
                         <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Browse.png" alt="Device Icon" class="w-full h-full object-contain">
@@ -409,7 +410,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300" data-aos="flip-left" data-aos-delay="400">
                     <div class="mb-6 flex justify-center">
                         <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Money.png" alt="Money Icon" class="w-full h-full object-contain">
@@ -434,13 +435,13 @@
     <section class="px-8 md:px-16 py-20 bg-[#F5F3F0]">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="flex justify-center lg:justify-start">
+                <div class="flex justify-center lg:justify-start" data-aos="fade-right" data-aos-duration="1000">
                     <div class="w-[450px] h-[450px] bg-[#E8E5DC] rounded-full flex items-center justify-center overflow-hidden">
                         <img src="./images/Ellipse1.png" alt="Hand with plant illustration" class="w-full h-full object-cover">
                     </div>
                 </div>
 
-                <div class="text-left">
+                <div class="text-left" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="text-4xl md:text-5xl text-gray-800 mb-6 font-tan-aegean leading-tight">
                         Donate and start the<br>
                         change
@@ -451,7 +452,7 @@
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     
-                    <div class="flex flex-wrap gap-4 mb-8">
+                    <div class="flex flex-wrap gap-4 mb-8" data-aos="fade-up" data-aos-delay="300">
                         <div class="flex items-center bg-[#7A8B6B] text-white px-6 py-3 rounded-full">
                             <span class="mr-2 text-black bg-white rounded-full p-2 px-4">✓</span>
                             <span class="font-medium font-['Raleway']">New</span>
@@ -466,7 +467,7 @@
                         </div>
                     </div>
                     
-                    <button class="bg-[#F4B840] text-black px-16 py-4 rounded-full text-lg font-medium hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg">
+                    <button class="bg-[#F4B840] text-black px-16 py-4 rounded-full text-lg font-medium hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg" data-aos="zoom-in" data-aos-delay="400">
                         Donate
                     </button>
                 </div>
@@ -478,7 +479,7 @@
     <section class="px-8 md:px-16 py-20">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="text-left">
+                <div class="text-left" data-aos="fade-right" data-aos-duration="1000">
                     <h2 class="text-4xl md:text-5xl text-gray-800 mb-6 font-tan-aegean leading-tight">
                         Upcycle and give your<br>
                         clothes a new life
@@ -489,7 +490,7 @@
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                     
-                    <div class="flex flex-wrap gap-4 mb-8">
+                    <div class="flex flex-wrap gap-4 mb-8" data-aos="fade-up" data-aos-delay="300">
                         <div class="flex items-center bg-[#7A8B6B] text-white px-6 py-3 rounded-full">
                             <span class="mr-2 text-black bg-white rounded-full p-2 px-4">✓</span>
                             <span class="font-medium font-['Raleway']">New</span>
@@ -504,12 +505,12 @@
                         </div>
                     </div>
                     
-                    <button class="bg-[#F4B840] text-black px-16 py-4 rounded-full text-lg font-medium hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg">
+                    <button class="bg-[#F4B840] text-black px-16 py-4 rounded-full text-lg font-medium hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg" data-aos="zoom-in" data-aos-delay="400">
                         Upcycle
                     </button>
                 </div>
 
-                <div class="flex justify-center lg:justify-end">
+                <div class="flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1000">
                     <div class="w-[450px] h-[450px] bg-[#C4C8B8] rounded-full flex items-center justify-center overflow-hidden">
                         <img src="./images/Ellipse2.png" alt="Recycling symbol illustration" class="w-full h-full object-cover">
                     </div>
@@ -522,13 +523,13 @@
     <section class="px-8 md:px-16 py-20 bg-[#F5F3F0]">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="flex justify-center lg:justify-start">
+                <div class="flex justify-center lg:justify-start" data-aos="fade-right" data-aos-duration="1000">
                     <div class="w-[550px] h-[550px] rounded-tl-[200px] rounded-4xl overflow-hidden shadow-lg">
                         <img src="./images/reader.jpg" alt="Person reading newspaper" class="w-full h-full object-cover">
                     </div>
                 </div>
 
-                <div class="text-left">
+                <div class="text-left" data-aos="fade-left" data-aos-duration="1000">
                     <h2 class="text-4xl md:text-5xl text-[#F4B840] mb-6 font-tan-aegean leading-tight">
                         Are You A Seller?
                     </h2>
@@ -536,7 +537,7 @@
                         Do you have amazing items people would love to rent? Join our growing community of sellers and turn your products into a steady income stream.
                     </p>
                     
-                    <div class="space-y-4 mb-8">
+                    <div class="space-y-4 mb-8" data-aos="fade-up" data-aos-delay="300">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 bg-[#7A8B6B] rounded-full flex items-center justify-center">
                                 <i class="fas fa-list text-white text-sm"></i>
@@ -561,7 +562,7 @@
                         Ready to start sharing and earning? Register as a seller today!
                     </p>
                     
-                    <button class="bg-[#F4B840] text-black px-16 py-4 rounded-full text-lg font-medium hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg">
+                    <button class="bg-[#F4B840] text-black px-16 py-4 rounded-full text-lg font-medium hover:bg-orange-500 transition-all duration-200 hover:scale-105 shadow-lg" data-aos="zoom-in" data-aos-delay="400">
                         Register
                     </button>
                 </div>
@@ -570,7 +571,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#48583B] px-8 md:px-16 py-16">
+    <footer class="bg-[#48583B] px-8 md:px-16 py-16" data-aos="fade-up">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
                 <div class="flex flex-col items-center lg:items-start gap-6 lg:col-span-2">
@@ -615,5 +616,15 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
 </body>
 </html>
