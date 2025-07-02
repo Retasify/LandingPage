@@ -13,21 +13,21 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-[#FAF5EF] min-h-screen">
-    <header class="bg-[#48583B] p-4 md:px-8 flex items-center justify-between" data-aos="fade-down">
+<body class="bg-[#FAF5EF] min-h-screen">
+    <header class="bg-[#48583B] p-4  flex items-center justify-between max-w-full w-full" data-aos="fade-down">
         <div class="flex items-center gap-8">
-            <div class="w-auto bg-[#EAEFD7] p-2 px-10 rounded-tl-[225px] rounded-br-[225px] rounded-tr-[25px] rounded-bl-[25px] ml-20 border-2 border-[#99A57C]">
+            <div class="w-auto bg-[#EAEFD7] p-2 px-10 rounded-tl-[225px] rounded-br-[225px] rounded-tr-[25px] rounded-bl-[25px] ml-5 md:ml-20 border-2 border-[#99A57C]">
                 <img src="./images/RetasifyLogo.svg" alt="Retasify Logo" class="h-12 w-auto content-center">
             </div>
             
-            <nav class="hidden md:flex items-center gap-6 ml-5">
+            <nav class="hidden lg:flex items-center gap-6 ml-5">
                 <a href="#" class="text-white hover:text-[#F4B840] transition-colors text-lg">Categories</a>
                 <a href="#" class="text-white hover:text-[#F4B840] transition-colors text-lg">Donate/Pickup</a>
                 <a href="#" class="text-white hover:text-[#F4B840] transition-colors text-lg">Upcycle</a>
             </nav>
         </div>
         
-        <div class="flex-1 max-w-md mx-8 hidden md:block">
+        <div class="flex-1 max-w-md mx-8 hidden lg:block">
             <div class="relative">
                 <input type="text" placeholder="Search keywords" 
                        class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-full text-sm outline-none focus:border-[#F4B840] bg-white">
@@ -35,7 +35,7 @@
             </div>
         </div>
         
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 hidden lg:block">
             <button class="p-2 text-white hover:text-[#F4B840] transition-colors">
                 <i class="fas fa-clock text-lg"></i>
             </button>
@@ -50,7 +50,11 @@
                 <i class="fas fa-user text-lg"></i>
             </button>
         </div>
+        <button class="text-white hover:text-[#F4B840] transition-colors p-2 flex lg:hidden" id="burger-menu">
+            <i class="fa-solid fa-bars text-4xl"></i>
+        </button>
     </header>
+        
 
     <!-- Landing Page -->
     <section class="min-h-screen px-5 md:px-10 py-10 md:py-14">
