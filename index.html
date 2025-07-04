@@ -14,6 +14,47 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
 </head>
+
+<!-- modals -->
+ 
+<!-- Mobile Navigation Dropdown -->
+<!-- <div class="fixed top-0 left-0 w-full h-full bg-[#48583B] z-0 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex flex-col h-full">
+        <div class="flex items-center justify-between p-4 border-b border-[#70885A]">
+            <img src="./images/RetasifyLogo.svg" alt="Retasify Logo" class="h-8 w-auto bg-white p-2 px-4 rounded-full">
+            <button id="closeMobileNav" class="text-white hover:text-[#F4B840] text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="flex-1 flex flex-col justify-center px-8 space-y-8">
+            <a href="#" class="text-white hover:text-[#F4B840] transition-colors text-2xl font-medium py-4 border-b border-[#70885A]">Categories</a>
+            <a href="#" class="text-white hover:text-[#F4B840] transition-colors text-2xl font-medium py-4 border-b border-[#70885A]">Donate/Pickup</a>
+            <a href="#" class="text-white hover:text-[#F4B840] transition-colors text-2xl font-medium py-4 border-b border-[#70885A]">Upcycle</a>
+            
+            <div class="pt-8">
+                <button class="bg-[#F4B840] text-black px-8 py-3 rounded-full hover:bg-[#D1630E] transition-colors text-lg font-medium w-full" id="mobile-sign-in-btn">
+                    Sign In
+                </button>
+            </div>
+        </div>
+        
+        <div class="p-8 border-t border-[#70885A]">
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#F4B840] transition-colors">
+                    <i class="fab fa-facebook text-[#48583B] text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#F4B840] transition-colors">
+                    <i class="fab fa-instagram text-[#48583B] text-lg"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-[#F4B840] transition-colors">
+                    <i class="fab fa-tiktok text-[#48583B] text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
 <body class="bg-[#FAF5EF] min-h-screen">
     <header class="bg-[#48583B] p-3  flex items-center justify-between max-w-full w-full" data-aos="fade-down">
         <div class="flex items-center gap-8">
@@ -690,16 +731,6 @@
             easing: 'ease-in-out',
             once: true,
             mirror: false
-        });
-
-        const signInBtn = document.getElementById('sign-in-btn');
-        const modal = document.getElementById('signInModal');
-        const closeModal = document.getElementById('closeModal');
-
-        signInBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
         });
 
         closeModal.addEventListener('click', function() {
