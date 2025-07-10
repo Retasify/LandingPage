@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
+    <script type="module" src="../Backend/landing-show-featured.js"></script>
+    <script type="module" src="https://retasify.github.io/Backend/landing-show-featured.js"></script>
 </head>
 
 <!-- modals -->
@@ -196,11 +198,11 @@
     </section>
 
     <!-- Featured Items -->
-    <section class="px-8 md:px-16 py-20 bg-[#FAF5EF]">
+    <section class="px-8 md:px-16 py-20 bg-[#FAF5EF]" >
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl text-gray-800 mb-16 font-tan-aegean text-center" data-aos="fade-up">Featured Items</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="productGrid">
                 <!-- Featured Item Card 1 -->
                 <div class="bg-[#E7E9DE] rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto p-3 border border-[#99A57C]" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative">
