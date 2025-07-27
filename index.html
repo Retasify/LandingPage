@@ -15,6 +15,46 @@
     <link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
     <script type="module" src="../Backend/landing-show-featured.js"></script>
     <script type="module" src="https://retasify.github.io/Backend/landing-show-featured.js"></script>
+
+    <style>
+        .cta-button {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover:before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+        }
+
+        .step-card {
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: scale(1) rotate(5deg);
+        }
+    </style>
+
 </head>
 
 <!-- modals -->
@@ -125,10 +165,10 @@
                    Redefine fashion for a sustainable future. Rent, donate, or upcycle your clothes and join a community where every action makes an impact.
                 </p>
                 <div class="flex gap-10">
-                    <button class="bg-[#F4B840] text-black px-4 py-2 md:px-8 md:py-3 rounded-full text-lg md:text-lg font-sans hover:bg-[#D1630E] transition-all duration-200 hover:scale-105 shadow-lg font-normal" data-aos="zoom-in" data-aos-delay="300" onclick="location.href='https://nervachan.github.io/retasify/'">
+                    <button class="cta-button bg-[#F4B840] text-black px-4 py-2 md:px-8 md:py-3 rounded-full text-lg md:text-lg font-sans hover:bg-[#D1630E] transition-all duration-200 hover:scale-105 shadow-lg font-normal" data-aos="zoom-in" data-aos-delay="300" onclick="location.href='https://nervachan.github.io/retasify/'">
                         Join as Buyer
                     </button>
-                    <button class="bg-[#E7E9DE] text-black px-4 py-2 md:px-8 md:py-3 rounded-full text-lg md:text-lg font-sans hover:bg-[#7A875B] transition-all duration-200 hover:scale-105 shadow-lg font-normal border border-[#99A57C]" data-aos="zoom-in" data-aos-delay="300" onclick="location.href='https://nervachan.github.io/retasify/'">
+                    <button class="cta-button bg-[#E7E9DE] text-black px-4 py-2 md:px-8 md:py-3 rounded-full text-lg md:text-lg font-sans hover:bg-[#7A875B] transition-all duration-200 hover:scale-105 shadow-lg font-normal border border-[#99A57C]" data-aos="zoom-in" data-aos-delay="300" onclick="location.href='https://nervachan.github.io/retasify/'">
                         Join as Seller
                     </button>
                 </div>
@@ -426,7 +466,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300 shadow-2xl" data-aos="flip-left" data-aos-delay="100">
                     <div class="mb-6 flex justify-center">
-                        <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
+                        <div class="step-card w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Device.png" alt="Browse Icon" class="w-full h-full object-contain">
                         </div>
                     </div>
@@ -444,7 +484,7 @@
 
                 <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300 shadow-2xl" data-aos="flip-left" data-aos-delay="200">
                     <div class="mb-6 flex justify-center">
-                        <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
+                        <div class="step-card w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Location.png" alt="Location Icon" class="w-full h-full object-contain">
                         </div>
                     </div>
@@ -462,7 +502,7 @@
 
                 <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300 shadow-2xl" data-aos="flip-left" data-aos-delay="300">
                     <div class="mb-6 flex justify-center">
-                        <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
+                        <div class="step-card w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Browse.png" alt="Device Icon" class="w-full h-full object-contain">
                         </div>
                     </div>
@@ -480,7 +520,7 @@
 
                 <div class="bg-[#48583B] rounded-3xl p-8 text-white relative overflow-hidden hover:shadow-xl transition-all duration-300 shadow-2xl" data-aos="flip-left" data-aos-delay="400">
                     <div class="mb-6 flex justify-center">
-                        <div class="w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
+                        <div class="step-card w-48 h-48 bg-transparent rounded-2xl flex items-center justify-center mb-6 relative">
                             <img src="./images/Money.png" alt="Money Icon" class="w-full h-full object-contain">
                         </div>
                     </div>
